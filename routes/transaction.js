@@ -72,10 +72,10 @@ router.post('/transaction',
         res.redirect('/transaction')
     });
 
-router.get('/transaction/remove/:transaction.Id',
+router.get('/transaction/remove/:transactionId',
     isLoggedIn,
     async (req, res, next) => {
-        console.log("inside /transaction/remove/:transaction._Id")
+        console.log("inside /transaction/remove/:transactionId")
         await transactionItem.deleteOne({
             _id: req.params.transactionId
         });
