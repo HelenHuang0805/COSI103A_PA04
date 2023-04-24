@@ -1,0 +1,32 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00b7ff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+th {
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+.btnTD {
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.newItemTable {
+    width: 20%;
+}

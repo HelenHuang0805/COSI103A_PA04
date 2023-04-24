@@ -1,0 +1,24 @@
+<form method="post" action="/transaction/update">
+    <input type="hidden" name="itemId" value="<%= item._id %>">
+    <h1>Edit Transaction</h1>
+    <ul class="list-group newItemTable">
+        <li class="list-group-item">
+            <label for="description">Description</label>
+            <input type="text" name="description" value="<%= item.description %>">
+        </li>
+        <li class="list-group-item">
+            <label for="category">Category</label>
+            <input type="text" name="category" value="<%= item.category %>">
+        </li>
+        <li class="list-group-item">
+            <label for="amount">Amount</label>
+            <input type="text" name="amount" value="<%= item.amount %>">
+        </li>
+        <li class="list-group-item">
+            <label for="date">Date</label><br>
+            <input type="date" name="date" value="<%= item.date %>">
+        </li>
+    </ul>
+    <br>
+    <input type="submit" value="store">
+</form>

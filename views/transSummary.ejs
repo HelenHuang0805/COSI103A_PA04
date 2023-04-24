@@ -1,0 +1,29 @@
+<h1> ToDo List for <%= user.username %> </h1>
+<div>
+    <p>Here is your list of transactions!</p>
+</div>
+
+<div>
+    <ul>
+        <li><a href="/transaction">transaction table</a></li>
+    </ul>
+</div>
+
+<div>
+    <table class="newItemTable">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i = 0; i < results.length; i++) { %>
+            <tr>
+                <td><%= results[i]._id %></td>
+                <td><%= results[i].total %></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
